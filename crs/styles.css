@@ -31,7 +31,10 @@ header{
     text-align: center
 }
 main {
-    flex: 1;
+    display: flex;
+    flex: 2;
+    text-align: center
+    
     padding: 15px;
     background-image: -moz-element();
     image-rendering: auto;
