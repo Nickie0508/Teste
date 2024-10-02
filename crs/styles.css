@@ -5,12 +5,12 @@ body{
     display: flex;
     flex-direction: column;
     height: auto;
-    background-color: #fad9d9;
+    background-color: #e4f5f7;
 }
 .menu {
     width: 250px;
     height: 100%;
-    background-color: #fff677;
+    background-color: #ff837a;
     position: fixed;
     left: -250px; /* Inicia fora da tela à esquerda */
     transition: left 0.3s ease;
