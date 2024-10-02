@@ -5,7 +5,7 @@ body{
     display: flex;
     flex-direction: column;
     height: auto;
-    background-color: #FF1515;
+    background-color: #fad9d9;
 }
 .menu {
     width: 250px;
