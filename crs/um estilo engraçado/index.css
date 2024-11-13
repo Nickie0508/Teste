@@ -8,6 +8,50 @@ body{
     background-color: #ffe5eb;
 
 }
-menu{
+.menu {
+    width: 250px;
+    height: 100%;
+    background-color: #a4ccff;
+    position: fixed;
+    left: -230px; /* Inicia fora da tela à esquerda */
+    transition: left 0.3s ease;
+    padding: 20px;
+    box-shadow: 9px 0 5px rgba(213, 245, 255, 0.795);
+}
 
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    background-color: rgb(67,102,205);
+    text-align: center;
+    font-family: fantasy; 
+    font-stretch: ultra-expanded;
+}
+
+#toggle-btn {
+    background: none;
+    border: none;
+    color: rgb(180, 30, 30);
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: -50px; /* Fica fora da tela inicialmente */
+    transition: right 0.3s ease;
+}
+
+
+ul li {
+    list-style: none;
+    padding: 18px;
+    color: white;
+    text-decoration: none;
 }
