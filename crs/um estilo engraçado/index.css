@@ -8,6 +8,14 @@ body{
     background-color: #ffe5eb;
 
 }
+header{
+    background-color: #ff9fa7;
+    color: #ffffff;
+    text-align: center;
+    padding: 9px 0;
+    height: 130px;
+    font-size: larger;
+}
 .menu {
     width: 250px;
     height: 100%;
