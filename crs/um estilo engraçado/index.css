@@ -19,9 +19,9 @@ header{
 .menu {
     width: 250px;
     height: 100%;
-    background-color: #a4ccff;
+    background-color: #abcce7;
     position: fixed;
-    left: -230px; /* Inicia fora da tela à esquerda */
+    left: -270px; /* Inicia fora da tela à esquerda */
     transition: left 0.3s ease;
     padding: 20px;
     box-shadow: 9px 0 5px rgba(213, 245, 255, 0.795);
@@ -38,22 +38,22 @@ header{
     text-decoration: none;
     display: block;
     padding: 10px 0;
-    background-color: rgb(67,102,205);
+    background-color: rgb(29, 48, 100);
     text-align: center;
     font-family: fantasy; 
     font-stretch: ultra-expanded;
 }
 
 #toggle-btn {
-    background: none;
+    background-color: #f87e7e;
     border: none;
-    color: rgb(180, 30, 30);
+    color: rgb(240, 253, 116);
     font-size: 30px;
     cursor: pointer;
     position: absolute;
     top: 20px;
-    right: -50px; /* Fica fora da tela inicialmente */
-    transition: right 0.3s ease;
+    right: -40px; /* Fica fora da tela inicialmente */
+    transition: right 0.5s ease;
 }
 
 
