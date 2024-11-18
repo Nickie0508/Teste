@@ -16,6 +16,10 @@ header{
     height: 130px;
     font-size: larger;
 }
+#Hello{
+    height:145px;
+     width:auto;
+}
 .menu {
     width: 250px;
     height: 100%;
