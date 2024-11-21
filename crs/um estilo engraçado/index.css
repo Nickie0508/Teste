@@ -22,19 +22,20 @@ header{
 }
 .menu {
     width: 250px;
-    height: 100%;
+    height: 100%; /* Mantém o menu na altura total da viewport */
     background-color: #abcce7;
     position: fixed;
-    left: -270px; /* Inicia fora da tela à esquerda */
+    left: -270px; /* Começa fora da tela */
     transition: left 0.3s ease;
     padding: 20px;
     box-shadow: 9px 0 5px rgba(213, 245, 255, 0.795);
+    overflow-y: auto; /* Permite rolagem vertical */
 }
 
 .menu ul {
     list-style-type: none;
     padding: 0;
-
+    margin: 0;
 }
 
 .menu li a {
@@ -42,10 +43,15 @@ header{
     text-decoration: none;
     display: block;
     padding: 10px 0;
-    background-color: rgb(29, 48, 100);
+    background-color: rgb(91, 118, 194);
     text-align: center;
     font-family: fantasy; 
     font-stretch: ultra-expanded;
+}
+#menuimg {
+    height: 180px;
+    width: auto;
+
 }
 
 #toggle-btn {
@@ -54,12 +60,12 @@ header{
     color: rgb(240, 253, 116);
     font-size: 30px;
     cursor: pointer;
-    position: absolute;
+    position: fixed; /* Alterado para "fixed" para independência do menu */
     top: 20px;
-    right: -40px; /* Fica fora da tela inicialmente */
-    transition: right 0.5s ease;
+    left: 0; /* Sempre visível */
+    transition: left 0.3s ease;
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
 }
-
 
 ul li {
     list-style: none;
@@ -68,17 +74,18 @@ ul li {
     text-decoration: none;
 }
 
+/* Personalização opcional da barra de rolagem */
+.menu::-webkit-scrollbar {
+    width: 8px;
+}
 
+.menu::-webkit-scrollbar-thumb {
+    background: #888; /* Cor da barra */
+    border-radius: 4px;
+}
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffe5eb;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+.menu::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor ao passar o mouse */
 }
 
 header, footer {
@@ -89,7 +96,11 @@ header, footer {
 }
 
 #Hello {
-    height: 100px;
+    height: 150px;
+    width: auto;
+}
+#Goodbye {
+    height: 250px;
     width: auto;
 }
 
